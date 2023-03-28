@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name ="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:\Users\kaveri.appana\IdeaProjects\RestAssuredProject\pom.xml">
+        <classes>
+            <!--            <class name ="PetStore.PlaceOrderForPet">-->
+            <!--                <methods>-->
+            <!--                    <include name="petorder" />-->
+            <!--                </methods>-->
+            <!--            </class>-->
+
+            <class name ="UserTestCases.CreateMultipleUsersWithArray"></class>
+            <class name ="UserTestCases.CreateUser"></class>
+            <class name ="UserTestCases.GetUserLogin"></class>
+            <class name ="UserTestCases.GetUserByName"></class>
+            <class name ="UserTestCases.UpdateUser"></class>
+            <class name ="UserTestCases.GetLogoutUser"></class>
+            <class name ="UserTestCases.DeleteUser"></class>
+        </classes>
+    </test>
+
+</suite>

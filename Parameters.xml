@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name ="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:\Users\kaveri.appana\IdeaProjects\RestAssuredProject\pom.xml">
+
+
+                <parameter name="id" value="0"/>
+                <parameter name="username" value="king"/>
+                <parameter name="firstName" value="queen"/>
+                <parameter name="lastName" value="kingqueen"/>
+                <parameter name="email" value="king@gmail.com"/>
+                <parameter name="password" value="kaveri"/>
+                <parameter name="phone" value="798989889"/>
+                <parameter name="userStatus" value="0"/>
+        <classes>
+            <!--            <class name ="PetStore.PlaceOrderForPet">-->
+            <!--                <methods>-->
+            <!--                    <include name="petorder" />-->
+            <!--                </methods>-->
+            <!--            </class>-->
+
+
+            <class name ="UserTestCases.PostUser_PassingParametersFromTestng"></class>
+
+        </classes>
+    </test>
+
+</suite>

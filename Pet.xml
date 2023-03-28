@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name ="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:\Users\kaveri.appana\IdeaProjects\RestAssuredProject\pom.xml">
+        <classes>
+            <!--            <class name ="PetStore.PlaceOrderForPet">-->
+            <!--                <methods>-->
+            <!--                    <include name="petorder" />-->
+            <!--                </methods>-->
+            <!--            </class>-->
+
+            <class name ="Pet.AddNewPetToStore"></class>
+            <class name ="Pet.GetPetById"></class>
+            <class name ="Pet.GetPetByStatus"></class>
+            <class name ="Pet.UploadImage"></class>
+            <class name ="Pet.UpdateAnExixtingPet"></class>
+            <class name ="Pet.DeletePet"></class>
+
+        </classes>
+    </test>
+
+</suite>
