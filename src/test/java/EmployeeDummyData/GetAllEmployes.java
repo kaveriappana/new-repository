@@ -17,6 +17,7 @@ public class GetAllEmployes {
         String header=response.getHeader("Content-Type");
         System.out.println("header is "+header);
 
+        Assert.assertEquals(response.getStatusCode(),200);
         String body = response.getBody().asString();
         System.out.println("response body is "+body);
 
