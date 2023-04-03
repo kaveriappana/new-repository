@@ -31,7 +31,11 @@ public class PutUpdateRecord {
         System.out.println("Response body is "+responsebody);
 
         Assert.assertEquals(code,200);
-        
+        Assert.assertTrue(responsebody.contains("\"status\":\"success\""));
+        Assert.assertTrue(responsebody.contains("\"message\":\"Successfully! Record has been updated.\""));
+
+        String expectedresponsebody = "{\"status\":\"success\",\"data\":{\"name\":\"new\",\"salary\":\"423\",\"age\":\"23\"},\"message\":\"Successfully! Record has been updated.\"}";
+        Assert.assertTrue(responsebody.contentEquals(expectedresponsebody));
 
         
 
