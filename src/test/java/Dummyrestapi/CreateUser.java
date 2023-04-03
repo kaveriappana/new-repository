@@ -5,6 +5,7 @@ import io.restassured.http.Method;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.json.simple.JSONObject;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class CreateUser {
@@ -24,6 +25,9 @@ public class CreateUser {
         System.out.println("request body " + body);
 
         System.out.println(response.getStatusCode());
+
+        Assert.assertTrue(body.contentEquals("\"name\":\"morpheus\""));
+    
 
     }
 }
