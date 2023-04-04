@@ -22,6 +22,6 @@ public class GetAllEmployes {
         System.out.println("response body is "+body);
 
         Assert.assertTrue(body.contains("\"status\":\"success\""));
-
+        Assert.assertTrue(body.contains("\"employee_name\":\"Tiger Nixon\""));
     }
 }

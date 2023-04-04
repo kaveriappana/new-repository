@@ -28,6 +28,7 @@ public class CreateEmploye {
         Assert.assertEquals(response.getStatusCode(),200);
 
         Assert.assertTrue(respbody.contains("\"status\":\"success\""));
+        Assert.assertTrue(respbody.contains("\"name\":\"test\",\"salary\":\"123\",\"age\":\"23\",\"id\":1324"));
 
 
 

@@ -19,6 +19,8 @@ public class GetSingleEmployee {
 
         Assert.assertTrue(body.contains("\"status\":\"success\""));
         Assert.assertEquals(response.getStatusCode(),200);
+        Assert.assertTrue(body.contains("\"employee_name\":\"Tiger Nixon\""));
+
 
     }
 }
