@@ -4,13 +4,19 @@ import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import org.apache.log4j.PropertyConfigurator;
 import org.json.simple.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.logging.Logger;
+
 public class CreateUser {
     @Test(priority = 2)
     public void createuser(){
+        Logger logger = Logger.getLogger(String.valueOf(CreateUser.class));
+        PropertyConfigurator.configure("C:\\Users\\kaveri.appana\\IdeaProjects\\new-repository\\src\\main\\resources\\log4j.properties");
+
         RequestSpecification request = RestAssured.given();
         request.header("Content-Type","application/json");
         JSONObject json = new JSONObject();
@@ -40,6 +46,8 @@ public class CreateUser {
         System.out.println((String) jsonpath.get("type"));
         Assert.assertEquals(jsonpath.get("type"),"unknown");
         System.out.println((String) jsonpath.get("message"));
+
+        logger.info("user created successfully");
 
 
 
