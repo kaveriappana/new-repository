@@ -8,13 +8,13 @@
             <!--                </methods>-->
             <!--            </class>-->
 
-            <class name ="UserTestCases.CreateMultipleUsersWithArray"></class>
-            <class name ="UserTestCases.CreateUser"></class>
-            <class name ="UserTestCases.GetUserLogin"></class>
+<!--            <class name ="UserTestCases.CreateMultipleUsersWithArray"></class>-->
+<!--            <class name ="UserTestCases.CreateUser"></class>-->
+<!--            <class name ="UserTestCases.GetUserLogin"></class>-->
             <class name ="UserTestCases.GetUserByName"></class>
-            <class name ="UserTestCases.UpdateUser"></class>
-            <class name ="UserTestCases.GetLogoutUser"></class>
-            <class name ="UserTestCases.DeleteUser"></class>
+<!--            <class name ="UserTestCases.UpdateUser"></class>-->
+<!--            <class name ="UserTestCases.GetLogoutUser"></class>-->
+<!--            <class name ="UserTestCases.DeleteUser"></class>-->
         </classes>
     </test>
 

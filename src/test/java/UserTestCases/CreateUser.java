@@ -7,6 +7,7 @@ import io.restassured.specification.RequestSpecification;
 import org.apache.log4j.PropertyConfigurator;
 import org.json.simple.JSONObject;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import java.util.logging.Logger;
@@ -34,6 +35,7 @@ public class CreateUser {
 
         int code = response.getStatusCode();
         System.out.println("status code :"+code);
+        Reporter.log("status code is 200");
 
         String responsebody = response.getBody().asString();
         System.out.println("Response body is "+responsebody);
@@ -48,8 +50,8 @@ public class CreateUser {
         System.out.println((String) jsonpath.get("message"));
 
         logger.info("user created successfully");
-
-
+        Reporter.log("user  created  successfully");
+        Reporter.log(responsebody.toString());
 
     }
 }
