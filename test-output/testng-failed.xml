@@ -3,11 +3,11 @@
 <suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="C:\Users\kaveri.appana\IdeaProjects\RestAssuredProject\pom.xml(failed)">
     <classes>
-      <class name="UserTestCases.GetUserByName">
+      <class name="DataDrivenTesting.PutUpdateRecord_DataDriven">
         <methods>
-          <include name="getdeleteduser"/>
+          <include name="updateuser" invocation-numbers="1 2"/>
         </methods>
-      </class> <!-- UserTestCases.GetUserByName -->
+      </class> <!-- DataDrivenTesting.PutUpdateRecord_DataDriven -->
     </classes>
   </test> <!-- C:\Users\kaveri.appana\IdeaProjects\RestAssuredProject\pom.xml(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

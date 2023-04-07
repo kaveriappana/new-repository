@@ -9,7 +9,8 @@
             <!--            </class>-->
 
             <!--            <class name ="Dummyrestapi.CreateUser"></class>-->
-            <class name ="DataDrivenTesting.CreateEmploye_DataDriven"></class>
+<!--            <class name ="DataDrivenTesting.CreateEmploye_DataDriven"></class>-->
+            <class name ="DataDrivenTesting.PutUpdateRecord_DataDriven"></class>
 
         </classes>
     </test>
