@@ -16,21 +16,26 @@ public class DeleteUser {
         Logger logger = Logger.getLogger("DeleteUser.class");
         PropertyConfigurator.configure("C:\\Users\\kaveri.appana\\IdeaProjects\\new-repository\\src\\main\\resources\\log4j.properties");
 
+        Reporter.log("This request is DELETE ");
+        Reporter.log("End point is https://petstore.swagger.io/v2/user/jack");
         RequestSpecification request = RestAssured.given();
         Response response = request.delete("https://petstore.swagger.io/v2/user/jack");
         int code = response.getStatusCode();
         System.out.println("status code" +code);
         Assert.assertEquals(code,200);
-        logger.info("user is deleted");
+        logger.info("User is deleted");
+        Reporter.log("Status code is 200");
+        Reporter.log("Sser deleted successfully");
     }
     @Test
     public void deletedeleteduser(){
         RequestSpecification request = RestAssured.given();
-       Response response = request.delete("https://petstore.swagger.io/v2/user/jjack");
+        Response response = request.delete("https://petstore.swagger.io/v2/user/jjack");
+        Reporter.log("Delete already deleted user");
         int code = response.getStatusCode();
         System.out.println("status code" +code);
         Assert.assertEquals(code,404);
-
-        Reporter.log("user deleted");
+        Reporter.log("Status code is 404");
+        Reporter.log("user deleted successfully");
     }
 }

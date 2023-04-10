@@ -18,6 +18,7 @@ public class CreateUser {
         Logger logger = Logger.getLogger(String.valueOf(CreateUser.class));
         PropertyConfigurator.configure("C:\\Users\\kaveri.appana\\IdeaProjects\\new-repository\\src\\main\\resources\\log4j.properties");
 
+        Reporter.log("This a post request");
         RequestSpecification request = RestAssured.given();
         request.header("Content-Type","application/json");
         JSONObject json = new JSONObject();
@@ -30,6 +31,8 @@ public class CreateUser {
         json.put("phone","78987869");
         json.put("userStatus","0");
 
+        Reporter.log("Request body contains id,username,firstname,lastname,email,password,phone,userStatus");
+        Reporter.log("End point is https://petstore.swagger.io/v2/user");
         request.body(json.toJSONString());
         Response response =request.post("https://petstore.swagger.io/v2/user");
 
@@ -41,8 +44,13 @@ public class CreateUser {
         System.out.println("Response body is "+responsebody);
         Assert.assertTrue(responsebody!=null);
 
+        Reporter.log("Response time is");
         System.out.println(response.getTime());
+        Reporter.log(String.valueOf(response.getTime()));
+
+        Reporter.log("Status code is ");
         System.out.println(response.getStatusLine());
+        Reporter.log(response.getStatusLine());
 
         JsonPath jsonpath = response.jsonPath();
         System.out.println((String) jsonpath.get("type"));
@@ -50,8 +58,10 @@ public class CreateUser {
         System.out.println((String) jsonpath.get("message"));
 
         logger.info("user created successfully");
-        Reporter.log("user  created  successfully");
+
+        Reporter.log("Response body is ");
         Reporter.log(responsebody.toString());
 
+        Reporter.log("user  created  successfully");
     }
 }
