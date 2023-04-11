@@ -8,7 +8,7 @@
             <!--                </methods>-->
             <!--            </class>-->
 
-            <class name ="Pet.AddNewPetToStore"></class>
+<!--            <class name ="Pet.AddNewPetToStore"></class>-->
             <class name ="Pet.GetPetById"></class>
             <class name ="Pet.GetPetByStatus"></class>
             <class name ="Pet.UploadImage"></class>

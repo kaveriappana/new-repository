@@ -18,6 +18,7 @@ public class CreateUser {
         Logger logger = Logger.getLogger(String.valueOf(CreateUser.class));
         PropertyConfigurator.configure("C:\\Users\\kaveri.appana\\IdeaProjects\\new-repository\\src\\main\\resources\\log4j.properties");
 
+        Reporter.log("This Request is Post request");
         Reporter.log("This a post request");
         RequestSpecification request = RestAssured.given();
         request.header("Content-Type","application/json");

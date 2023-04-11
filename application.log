@@ -1,44 +1,40 @@
-2023-04-10 15:39:55,095 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://petstore.swagger.io:443
-2023-04-10 15:39:55,167 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to petstore.swagger.io:443
-2023-04-10 15:39:56,613 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
-2023-04-10 15:39:56,613 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
-2023-04-10 15:39:56,613 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
-2023-04-10 15:39:56,613 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
-2023-04-10 15:39:56,613 DEBUG [main] DefaultHttpClient:677 - Attempt 1 to execute request
-2023-04-10 15:39:56,613 DEBUG [main] DefaultClientConnection:274 - Sending request: GET /v2/user/logout HTTP/1.1
-2023-04-10 15:39:56,613 DEBUG [main] wire:73 -  >> "GET /v2/user/logout HTTP/1.1[\r][\n]"
-2023-04-10 15:39:56,621 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
-2023-04-10 15:39:56,621 DEBUG [main] wire:73 -  >> "Host: petstore.swagger.io[\r][\n]"
-2023-04-10 15:39:56,621 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
-2023-04-10 15:39:56,621 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/9.0.4)[\r][\n]"
-2023-04-10 15:39:56,621 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-2023-04-10 15:39:56,621 DEBUG [main] wire:73 -  >> "[\r][\n]"
-2023-04-10 15:39:56,621 DEBUG [main] headers:278 - >> GET /v2/user/logout HTTP/1.1
-2023-04-10 15:39:56,621 DEBUG [main] headers:281 - >> Accept: */*
-2023-04-10 15:39:56,621 DEBUG [main] headers:281 - >> Host: petstore.swagger.io
-2023-04-10 15:39:56,621 DEBUG [main] headers:281 - >> Connection: Keep-Alive
-2023-04-10 15:39:56,621 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/9.0.4)
-2023-04-10 15:39:56,621 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
-2023-04-10 15:39:57,004 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
-2023-04-10 15:39:57,004 DEBUG [main] wire:73 -  << "Date: Mon, 10 Apr 2023 10:09:56 GMT[\r][\n]"
-2023-04-10 15:39:57,004 DEBUG [main] wire:73 -  << "Content-Type: application/json[\r][\n]"
-2023-04-10 15:39:57,004 DEBUG [main] wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
-2023-04-10 15:39:57,004 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
-2023-04-10 15:39:57,004 DEBUG [main] wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
-2023-04-10 15:39:57,004 DEBUG [main] wire:73 -  << "Access-Control-Allow-Methods: GET, POST, DELETE, PUT[\r][\n]"
-2023-04-10 15:39:57,004 DEBUG [main] wire:73 -  << "Access-Control-Allow-Headers: Content-Type, api_key, Authorization[\r][\n]"
-2023-04-10 15:39:57,004 DEBUG [main] wire:73 -  << "Server: Jetty(9.2.9.v20150224)[\r][\n]"
-2023-04-10 15:39:57,004 DEBUG [main] wire:73 -  << "[\r][\n]"
-2023-04-10 15:39:57,004 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
-2023-04-10 15:39:57,004 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
-2023-04-10 15:39:57,004 DEBUG [main] headers:265 - << Date: Mon, 10 Apr 2023 10:09:56 GMT
-2023-04-10 15:39:57,004 DEBUG [main] headers:265 - << Content-Type: application/json
-2023-04-10 15:39:57,004 DEBUG [main] headers:265 - << Transfer-Encoding: chunked
-2023-04-10 15:39:57,004 DEBUG [main] headers:265 - << Connection: keep-alive
-2023-04-10 15:39:57,012 DEBUG [main] headers:265 - << Access-Control-Allow-Origin: *
-2023-04-10 15:39:57,012 DEBUG [main] headers:265 - << Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-2023-04-10 15:39:57,012 DEBUG [main] headers:265 - << Access-Control-Allow-Headers: Content-Type, api_key, Authorization
-2023-04-10 15:39:57,012 DEBUG [main] headers:265 - << Server: Jetty(9.2.9.v20150224)
-2023-04-10 15:39:57,012 DEBUG [main] DefaultHttpClient:504 - Connection can be kept alive indefinitely
-2023-04-10 15:39:57,020 DEBUG [main] RestAssuredHttpBuilder:553 - Parsing response as: application/json
-2023-04-10 15:39:57,020 DEBUG [main] RestAssuredHttpBuilder:556 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-04-11 11:59:19,181 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://petstore.swagger.io:443
+2023-04-11 11:59:19,181 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to petstore.swagger.io:443
+2023-04-11 11:59:20,601 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2023-04-11 11:59:20,601 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2023-04-11 11:59:20,601 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2023-04-11 11:59:20,601 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2023-04-11 11:59:20,601 DEBUG [main] DefaultHttpClient:677 - Attempt 1 to execute request
+2023-04-11 11:59:20,601 DEBUG [main] DefaultClientConnection:274 - Sending request: DELETE /v2/pet/2 HTTP/1.1
+2023-04-11 11:59:20,601 DEBUG [main] wire:73 -  >> "DELETE /v2/pet/2 HTTP/1.1[\r][\n]"
+2023-04-11 11:59:20,601 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2023-04-11 11:59:20,601 DEBUG [main] wire:73 -  >> "Host: petstore.swagger.io[\r][\n]"
+2023-04-11 11:59:20,601 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2023-04-11 11:59:20,601 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/9.0.4)[\r][\n]"
+2023-04-11 11:59:20,601 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-04-11 11:59:20,601 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2023-04-11 11:59:20,601 DEBUG [main] headers:278 - >> DELETE /v2/pet/2 HTTP/1.1
+2023-04-11 11:59:20,601 DEBUG [main] headers:281 - >> Accept: */*
+2023-04-11 11:59:20,601 DEBUG [main] headers:281 - >> Host: petstore.swagger.io
+2023-04-11 11:59:20,601 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2023-04-11 11:59:20,601 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/9.0.4)
+2023-04-11 11:59:20,601 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2023-04-11 11:59:21,003 DEBUG [main] wire:73 -  << "HTTP/1.1 404 Not Found[\r][\n]"
+2023-04-11 11:59:21,005 DEBUG [main] wire:73 -  << "Date: Tue, 11 Apr 2023 06:29:20 GMT[\r][\n]"
+2023-04-11 11:59:21,005 DEBUG [main] wire:73 -  << "Content-Length: 0[\r][\n]"
+2023-04-11 11:59:21,005 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2023-04-11 11:59:21,005 DEBUG [main] wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2023-04-11 11:59:21,005 DEBUG [main] wire:73 -  << "Access-Control-Allow-Methods: GET, POST, DELETE, PUT[\r][\n]"
+2023-04-11 11:59:21,005 DEBUG [main] wire:73 -  << "Access-Control-Allow-Headers: Content-Type, api_key, Authorization[\r][\n]"
+2023-04-11 11:59:21,005 DEBUG [main] wire:73 -  << "Server: Jetty(9.2.9.v20150224)[\r][\n]"
+2023-04-11 11:59:21,005 DEBUG [main] wire:73 -  << "[\r][\n]"
+2023-04-11 11:59:21,005 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 404 Not Found
+2023-04-11 11:59:21,005 DEBUG [main] headers:262 - << HTTP/1.1 404 Not Found
+2023-04-11 11:59:21,005 DEBUG [main] headers:265 - << Date: Tue, 11 Apr 2023 06:29:20 GMT
+2023-04-11 11:59:21,005 DEBUG [main] headers:265 - << Content-Length: 0
+2023-04-11 11:59:21,005 DEBUG [main] headers:265 - << Connection: keep-alive
+2023-04-11 11:59:21,005 DEBUG [main] headers:265 - << Access-Control-Allow-Origin: *
+2023-04-11 11:59:21,005 DEBUG [main] headers:265 - << Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+2023-04-11 11:59:21,005 DEBUG [main] headers:265 - << Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+2023-04-11 11:59:21,005 DEBUG [main] headers:265 - << Server: Jetty(9.2.9.v20150224)
+2023-04-11 11:59:21,005 DEBUG [main] DefaultHttpClient:504 - Connection can be kept alive indefinitely

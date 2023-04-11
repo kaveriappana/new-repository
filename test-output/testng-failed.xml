@@ -3,11 +3,21 @@
 <suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="C:\Users\kaveri.appana\IdeaProjects\RestAssuredProject\pom.xml(failed)">
     <classes>
-      <class name="UserTestCases.GetUserByName">
+      <class name="Pet.GetPetById">
         <methods>
-          <include name="getdeleteduser"/>
+          <include name="findpetbyid"/>
         </methods>
-      </class> <!-- UserTestCases.GetUserByName -->
+      </class> <!-- Pet.GetPetById -->
+      <class name="Pet.UpdateAnExixtingPet">
+        <methods>
+          <include name="updatethepetinformationbyid"/>
+        </methods>
+      </class> <!-- Pet.UpdateAnExixtingPet -->
+      <class name="Pet.DeletePet">
+        <methods>
+          <include name="deletepet"/>
+        </methods>
+      </class> <!-- Pet.DeletePet -->
     </classes>
   </test> <!-- C:\Users\kaveri.appana\IdeaProjects\RestAssuredProject\pom.xml(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->
