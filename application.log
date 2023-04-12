@@ -1,40 +1,205 @@
-2023-04-11 11:59:19,181 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://petstore.swagger.io:443
-2023-04-11 11:59:19,181 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to petstore.swagger.io:443
-2023-04-11 11:59:20,601 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
-2023-04-11 11:59:20,601 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
-2023-04-11 11:59:20,601 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
-2023-04-11 11:59:20,601 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
-2023-04-11 11:59:20,601 DEBUG [main] DefaultHttpClient:677 - Attempt 1 to execute request
-2023-04-11 11:59:20,601 DEBUG [main] DefaultClientConnection:274 - Sending request: DELETE /v2/pet/2 HTTP/1.1
-2023-04-11 11:59:20,601 DEBUG [main] wire:73 -  >> "DELETE /v2/pet/2 HTTP/1.1[\r][\n]"
-2023-04-11 11:59:20,601 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
-2023-04-11 11:59:20,601 DEBUG [main] wire:73 -  >> "Host: petstore.swagger.io[\r][\n]"
-2023-04-11 11:59:20,601 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
-2023-04-11 11:59:20,601 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/9.0.4)[\r][\n]"
-2023-04-11 11:59:20,601 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-2023-04-11 11:59:20,601 DEBUG [main] wire:73 -  >> "[\r][\n]"
-2023-04-11 11:59:20,601 DEBUG [main] headers:278 - >> DELETE /v2/pet/2 HTTP/1.1
-2023-04-11 11:59:20,601 DEBUG [main] headers:281 - >> Accept: */*
-2023-04-11 11:59:20,601 DEBUG [main] headers:281 - >> Host: petstore.swagger.io
-2023-04-11 11:59:20,601 DEBUG [main] headers:281 - >> Connection: Keep-Alive
-2023-04-11 11:59:20,601 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/9.0.4)
-2023-04-11 11:59:20,601 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
-2023-04-11 11:59:21,003 DEBUG [main] wire:73 -  << "HTTP/1.1 404 Not Found[\r][\n]"
-2023-04-11 11:59:21,005 DEBUG [main] wire:73 -  << "Date: Tue, 11 Apr 2023 06:29:20 GMT[\r][\n]"
-2023-04-11 11:59:21,005 DEBUG [main] wire:73 -  << "Content-Length: 0[\r][\n]"
-2023-04-11 11:59:21,005 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
-2023-04-11 11:59:21,005 DEBUG [main] wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
-2023-04-11 11:59:21,005 DEBUG [main] wire:73 -  << "Access-Control-Allow-Methods: GET, POST, DELETE, PUT[\r][\n]"
-2023-04-11 11:59:21,005 DEBUG [main] wire:73 -  << "Access-Control-Allow-Headers: Content-Type, api_key, Authorization[\r][\n]"
-2023-04-11 11:59:21,005 DEBUG [main] wire:73 -  << "Server: Jetty(9.2.9.v20150224)[\r][\n]"
-2023-04-11 11:59:21,005 DEBUG [main] wire:73 -  << "[\r][\n]"
-2023-04-11 11:59:21,005 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 404 Not Found
-2023-04-11 11:59:21,005 DEBUG [main] headers:262 - << HTTP/1.1 404 Not Found
-2023-04-11 11:59:21,005 DEBUG [main] headers:265 - << Date: Tue, 11 Apr 2023 06:29:20 GMT
-2023-04-11 11:59:21,005 DEBUG [main] headers:265 - << Content-Length: 0
-2023-04-11 11:59:21,005 DEBUG [main] headers:265 - << Connection: keep-alive
-2023-04-11 11:59:21,005 DEBUG [main] headers:265 - << Access-Control-Allow-Origin: *
-2023-04-11 11:59:21,005 DEBUG [main] headers:265 - << Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-2023-04-11 11:59:21,005 DEBUG [main] headers:265 - << Access-Control-Allow-Headers: Content-Type, api_key, Authorization
-2023-04-11 11:59:21,005 DEBUG [main] headers:265 - << Server: Jetty(9.2.9.v20150224)
-2023-04-11 11:59:21,005 DEBUG [main] DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2023-04-12 12:34:13,828 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://dummy.restapiexample.com:443
+2023-04-12 12:34:13,848 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to dummy.restapiexample.com:443
+2023-04-12 12:34:15,445 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2023-04-12 12:34:15,447 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2023-04-12 12:34:15,447 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2023-04-12 12:34:15,448 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2023-04-12 12:34:15,448 DEBUG [main] DefaultHttpClient:677 - Attempt 1 to execute request
+2023-04-12 12:34:15,449 DEBUG [main] DefaultClientConnection:274 - Sending request: POST /api/v1/create HTTP/1.1
+2023-04-12 12:34:15,449 DEBUG [main] wire:73 -  >> "POST /api/v1/create HTTP/1.1[\r][\n]"
+2023-04-12 12:34:15,451 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2023-04-12 12:34:15,451 DEBUG [main] wire:73 -  >> "Content-Type: application/json[\r][\n]"
+2023-04-12 12:34:15,451 DEBUG [main] wire:73 -  >> "Content-Length: 45[\r][\n]"
+2023-04-12 12:34:15,452 DEBUG [main] wire:73 -  >> "Host: dummy.restapiexample.com[\r][\n]"
+2023-04-12 12:34:15,452 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2023-04-12 12:34:15,452 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/9.0.4)[\r][\n]"
+2023-04-12 12:34:15,453 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-04-12 12:34:15,454 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2023-04-12 12:34:15,455 DEBUG [main] headers:278 - >> POST /api/v1/create HTTP/1.1
+2023-04-12 12:34:15,455 DEBUG [main] headers:281 - >> Accept: */*
+2023-04-12 12:34:15,457 DEBUG [main] headers:281 - >> Content-Type: application/json
+2023-04-12 12:34:15,457 DEBUG [main] headers:281 - >> Content-Length: 45
+2023-04-12 12:34:15,458 DEBUG [main] headers:281 - >> Host: dummy.restapiexample.com
+2023-04-12 12:34:15,458 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2023-04-12 12:34:15,458 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/9.0.4)
+2023-04-12 12:34:15,459 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2023-04-12 12:34:15,459 DEBUG [main] wire:87 -  >> "{"name":"testing1","salary":"123","age":"23"}"
+2023-04-12 12:34:15,826 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2023-04-12 12:34:15,830 DEBUG [main] wire:73 -  << "Date: Wed, 12 Apr 2023 07:04:15 GMT[\r][\n]"
+2023-04-12 12:34:15,830 DEBUG [main] wire:73 -  << "Server: Apache[\r][\n]"
+2023-04-12 12:34:15,830 DEBUG [main] wire:73 -  << "Cache-Control: no-cache, private[\r][\n]"
+2023-04-12 12:34:15,831 DEBUG [main] wire:73 -  << "X-RateLimit-Limit: 60[\r][\n]"
+2023-04-12 12:34:15,831 DEBUG [main] wire:73 -  << "X-RateLimit-Remaining: 58[\r][\n]"
+2023-04-12 12:34:15,831 DEBUG [main] wire:73 -  << "Upgrade: h2,h2c[\r][\n]"
+2023-04-12 12:34:15,831 DEBUG [main] wire:73 -  << "Connection: Upgrade[\r][\n]"
+2023-04-12 12:34:15,832 DEBUG [main] wire:73 -  << "Cache-Control: max-age=21600[\r][\n]"
+2023-04-12 12:34:15,832 DEBUG [main] wire:73 -  << "Expires: Wed, 12 Apr 2023 13:04:15 GMT[\r][\n]"
+2023-04-12 12:34:15,832 DEBUG [main] wire:73 -  << "Vary: Accept-Encoding[\r][\n]"
+2023-04-12 12:34:15,832 DEBUG [main] wire:73 -  << "Content-Encoding: gzip[\r][\n]"
+2023-04-12 12:34:15,832 DEBUG [main] wire:73 -  << "host-header: c2hhcmVkLmJsdWVob3N0LmNvbQ==[\r][\n]"
+2023-04-12 12:34:15,833 DEBUG [main] wire:73 -  << "X-Endurance-Cache-Level: 2[\r][\n]"
+2023-04-12 12:34:15,833 DEBUG [main] wire:73 -  << "X-nginx-cache: WordPress[\r][\n]"
+2023-04-12 12:34:15,833 DEBUG [main] wire:73 -  << "Content-Length: 127[\r][\n]"
+2023-04-12 12:34:15,833 DEBUG [main] wire:73 -  << "Content-Type: application/json[\r][\n]"
+2023-04-12 12:34:15,833 DEBUG [main] wire:73 -  << "[\r][\n]"
+2023-04-12 12:34:15,834 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2023-04-12 12:34:15,834 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
+2023-04-12 12:34:15,835 DEBUG [main] headers:265 - << Date: Wed, 12 Apr 2023 07:04:15 GMT
+2023-04-12 12:34:15,835 DEBUG [main] headers:265 - << Server: Apache
+2023-04-12 12:34:15,835 DEBUG [main] headers:265 - << Cache-Control: no-cache, private
+2023-04-12 12:34:15,835 DEBUG [main] headers:265 - << X-RateLimit-Limit: 60
+2023-04-12 12:34:15,836 DEBUG [main] headers:265 - << X-RateLimit-Remaining: 58
+2023-04-12 12:34:15,836 DEBUG [main] headers:265 - << Upgrade: h2,h2c
+2023-04-12 12:34:15,836 DEBUG [main] headers:265 - << Connection: Upgrade
+2023-04-12 12:34:15,836 DEBUG [main] headers:265 - << Cache-Control: max-age=21600
+2023-04-12 12:34:15,836 DEBUG [main] headers:265 - << Expires: Wed, 12 Apr 2023 13:04:15 GMT
+2023-04-12 12:34:15,837 DEBUG [main] headers:265 - << Vary: Accept-Encoding
+2023-04-12 12:34:15,837 DEBUG [main] headers:265 - << Content-Encoding: gzip
+2023-04-12 12:34:15,838 DEBUG [main] headers:265 - << host-header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+2023-04-12 12:34:15,838 DEBUG [main] headers:265 - << X-Endurance-Cache-Level: 2
+2023-04-12 12:34:15,838 DEBUG [main] headers:265 - << X-nginx-cache: WordPress
+2023-04-12 12:34:15,838 DEBUG [main] headers:265 - << Content-Length: 127
+2023-04-12 12:34:15,839 DEBUG [main] headers:265 - << Content-Type: application/json
+2023-04-12 12:34:15,845 DEBUG [main] DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2023-04-12 12:34:15,850 DEBUG [main] RestAssuredHttpBuilder:553 - Parsing response as: application/json
+2023-04-12 12:34:15,851 DEBUG [main] wire:87 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]%[0xcc]K[0xe][0xc2]0[0xc][0x4][0xd0][0xab][0x84]YW[0x88][0x92][0x5]R[0x8e][0x1]'0[0xb1][0xfb][0x91][0xd2] [0xd5][0xce][0xa2][0xaa]zw[0xc][0xdd][0xcd][0xcc][0x93]f[0x87][0x1a]YS$h[0xcb]YT[0xd1][0x81][0xc9][0x8]iG[0xa5]E[0x1c]L[0xd4][0xe6]:[0xf6].J[0x85][0xd6][0xcd][0xb7][0xfe][0x1e][0xbd][0xd2][0xf8][0xf3][0x9c][0x19])[0xc6][0xc7][0xed][0xe8][0xb0][0xf8][0xcb])[0xaf][0xf3]rh[0xa5]l[0x97][0xf0][0x94][0xfc]Y9L[0xa4][0xe1]-R[0x3]1[0xb]_q|[0x1][0xcd]h*[0x1d][0x84][0x0][0x0][0x0]"
+2023-04-12 12:34:15,852 DEBUG [main] RestAssuredHttpBuilder:556 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-04-12 12:34:15,880 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@19962194
+2023-04-12 12:34:15,880 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2023-04-12 12:34:15,932 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://dummy.restapiexample.com:443
+2023-04-12 12:34:15,933 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to dummy.restapiexample.com:443
+2023-04-12 12:34:17,286 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2023-04-12 12:34:17,287 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2023-04-12 12:34:17,287 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2023-04-12 12:34:17,287 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2023-04-12 12:34:17,287 DEBUG [main] DefaultHttpClient:677 - Attempt 1 to execute request
+2023-04-12 12:34:17,287 DEBUG [main] DefaultClientConnection:274 - Sending request: PUT /api/v1/update/21 HTTP/1.1
+2023-04-12 12:34:17,288 DEBUG [main] wire:73 -  >> "PUT /api/v1/update/21 HTTP/1.1[\r][\n]"
+2023-04-12 12:34:17,288 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2023-04-12 12:34:17,288 DEBUG [main] wire:73 -  >> "Content-Type: application/json[\r][\n]"
+2023-04-12 12:34:17,289 DEBUG [main] wire:73 -  >> "Content-Length: 40[\r][\n]"
+2023-04-12 12:34:17,290 DEBUG [main] wire:73 -  >> "Host: dummy.restapiexample.com[\r][\n]"
+2023-04-12 12:34:17,290 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2023-04-12 12:34:17,290 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/9.0.4)[\r][\n]"
+2023-04-12 12:34:17,290 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-04-12 12:34:17,290 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2023-04-12 12:34:17,291 DEBUG [main] headers:278 - >> PUT /api/v1/update/21 HTTP/1.1
+2023-04-12 12:34:17,291 DEBUG [main] headers:281 - >> Accept: */*
+2023-04-12 12:34:17,291 DEBUG [main] headers:281 - >> Content-Type: application/json
+2023-04-12 12:34:17,292 DEBUG [main] headers:281 - >> Content-Length: 40
+2023-04-12 12:34:17,292 DEBUG [main] headers:281 - >> Host: dummy.restapiexample.com
+2023-04-12 12:34:17,292 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2023-04-12 12:34:17,292 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/9.0.4)
+2023-04-12 12:34:17,293 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2023-04-12 12:34:17,293 DEBUG [main] wire:87 -  >> "{"name":"new","salary":"423","age":"53"}"
+2023-04-12 12:34:17,793 DEBUG [main] wire:73 -  << "HTTP/1.1 429 Too Many Requests[\r][\n]"
+2023-04-12 12:34:17,794 DEBUG [main] wire:73 -  << "Date: Wed, 12 Apr 2023 07:04:17 GMT[\r][\n]"
+2023-04-12 12:34:17,794 DEBUG [main] wire:73 -  << "Server: Apache[\r][\n]"
+2023-04-12 12:34:17,795 DEBUG [main] wire:73 -  << "X-RateLimit-Limit: 60[\r][\n]"
+2023-04-12 12:34:17,795 DEBUG [main] wire:73 -  << "X-RateLimit-Remaining: 57[\r][\n]"
+2023-04-12 12:34:17,795 DEBUG [main] wire:73 -  << "retry-after: 58[\r][\n]"
+2023-04-12 12:34:17,796 DEBUG [main] wire:73 -  << "x-ratelimit-reset: 1681283115[\r][\n]"
+2023-04-12 12:34:17,796 DEBUG [main] wire:73 -  << "Cache-Control: no-cache, private[\r][\n]"
+2023-04-12 12:34:17,796 DEBUG [main] wire:73 -  << "Upgrade: h2,h2c[\r][\n]"
+2023-04-12 12:34:17,796 DEBUG [main] wire:73 -  << "Connection: Upgrade[\r][\n]"
+2023-04-12 12:34:17,796 DEBUG [main] wire:73 -  << "Vary: Accept-Encoding[\r][\n]"
+2023-04-12 12:34:17,797 DEBUG [main] wire:73 -  << "Content-Encoding: gzip[\r][\n]"
+2023-04-12 12:34:17,797 DEBUG [main] wire:73 -  << "host-header: c2hhcmVkLmJsdWVob3N0LmNvbQ==[\r][\n]"
+2023-04-12 12:34:17,797 DEBUG [main] wire:73 -  << "X-Endurance-Cache-Level: 2[\r][\n]"
+2023-04-12 12:34:17,797 DEBUG [main] wire:73 -  << "X-nginx-cache: WordPress[\r][\n]"
+2023-04-12 12:34:17,798 DEBUG [main] wire:73 -  << "Content-Length: 595[\r][\n]"
+2023-04-12 12:34:17,798 DEBUG [main] wire:73 -  << "Content-Type: text/html; charset=UTF-8[\r][\n]"
+2023-04-12 12:34:17,798 DEBUG [main] wire:73 -  << "[\r][\n]"
+2023-04-12 12:34:17,798 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 429 Too Many Requests
+2023-04-12 12:34:17,798 DEBUG [main] headers:262 - << HTTP/1.1 429 Too Many Requests
+2023-04-12 12:34:17,799 DEBUG [main] headers:265 - << Date: Wed, 12 Apr 2023 07:04:17 GMT
+2023-04-12 12:34:17,799 DEBUG [main] headers:265 - << Server: Apache
+2023-04-12 12:34:17,799 DEBUG [main] headers:265 - << X-RateLimit-Limit: 60
+2023-04-12 12:34:17,799 DEBUG [main] headers:265 - << X-RateLimit-Remaining: 57
+2023-04-12 12:34:17,799 DEBUG [main] headers:265 - << retry-after: 58
+2023-04-12 12:34:17,799 DEBUG [main] headers:265 - << x-ratelimit-reset: 1681283115
+2023-04-12 12:34:17,799 DEBUG [main] headers:265 - << Cache-Control: no-cache, private
+2023-04-12 12:34:17,800 DEBUG [main] headers:265 - << Upgrade: h2,h2c
+2023-04-12 12:34:17,800 DEBUG [main] headers:265 - << Connection: Upgrade
+2023-04-12 12:34:17,800 DEBUG [main] headers:265 - << Vary: Accept-Encoding
+2023-04-12 12:34:17,800 DEBUG [main] headers:265 - << Content-Encoding: gzip
+2023-04-12 12:34:17,800 DEBUG [main] headers:265 - << host-header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+2023-04-12 12:34:17,800 DEBUG [main] headers:265 - << X-Endurance-Cache-Level: 2
+2023-04-12 12:34:17,801 DEBUG [main] headers:265 - << X-nginx-cache: WordPress
+2023-04-12 12:34:17,801 DEBUG [main] headers:265 - << Content-Length: 595
+2023-04-12 12:34:17,801 DEBUG [main] headers:265 - << Content-Type: text/html; charset=UTF-8
+2023-04-12 12:34:17,801 DEBUG [main] DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2023-04-12 12:34:17,802 DEBUG [main] RestAssuredHttpBuilder:553 - Parsing response as: text/html; charset=UTF-8
+2023-04-12 12:34:17,802 DEBUG [main] wire:73 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x9d]RMs[0xd4]0[0xc][0xbd][0xef][0xaf][0x10][0xe6][0xd0]K[0xdd]t[0xb][0xec][0x94][0xb0][0x9][0x7]>n[0x5][0xa6][0xf4][0xc2][0xd1][0x1b]+[0x89][0xa9]c[0xa7][0x91][0xb2]m`[0xf8][0xef]8[0x9b][0xb6][0xfb][0x91][0xb4][0xc3][0xe0][0x8b][0xad]yOO[0xf2][0x93][0x96]/>~[0xfd]p[0xf5][0xe3][0xdb]'([0xb9][0xb2][0xe9]l[0xd9]_`[0x95]+[0x12][0x81]N[0xa4]3[0x8]gY[0xa2][0xd2][0xc3]s[0x13]V[0xc8][\n]"
+2023-04-12 12:34:17,802 DEBUG [main] wire:73 -  << "[0xb2]R5[0x84][0x9c][0x88][0x96]sy.[0xe]a[0xa7]*L[0xc4][0xda][0xe0]m[0xed][0x1b][0x16][0x90]y[0xc7][0xe8][0x2][0xfd][0xd6]h.[0x13][0x8d]k[0x93][0xa1][0xdc][0x4][0xc7]`[0x9c]a[0xa3][0xac][0xa4]LYL[0xe6]Al[0xab][0xc6][0x86]-[0xa6]W[0xde][0xc3][0x85]r[0x1d]\[0xe2]M[0x8b][0xc4][0xb4][0x8c][0x6]`[0x87][0xf9]BJ[0xf8][0x1c][0xca][0x10]H[0xb9][0xd3][0x8e]5[0xee][0x1a][0x1a][0xb4][0x89][0xd0][0x8e]d[0xdd]`[0x8e][0x9c][0x95][0x2][0xca][0xf0]JD[0x14][0xe5]}[0xca]IA[0xac][0xd8]d'[0x99][0xaf][0xc4]a[0xf2][0xc0],[0x99]k[0x8a][0x1f][0xf9][0xde][0x17][0x16]Um[0xa8]O[0x89]2[0xa2][0xf7][0xb9][0xaa][0x8c][0xed][0x92]/m[0xf8][0x8d][0x17]CI[0xe2][0xce]"[0x95][0x88],[0xe][[0xfd][0xbe][0x81][0xf6]{[0xdd][0xd0][0xb7]q[0xfa][0x81][0x1c][0xc3][0xca][0xeb][0xe]~[0xef][0x1][0xfd]Y[0xa9][0xec][0xba]h|[0xeb][0xb4][0xcc][0xbc][0xf5]M[0xc]/[0xf3]<7[0xe2]=[0x80][0x8b]W[0x8b][0xd5]b[0x2][0xef][0xff]$[0x87][0xfe]c8[0x1a]~pt[0xc][0xa4][0x82]c[0x84][0x8d]y*[0xe5][0x16]MQr[0xc][0xf3][0xd3][0xd3]1[0xa3][0xdc][0x82][0xeb]r[0xc]W[0xaa])[0x8c][0x8b][0xe1] [0xf3][0xcf]l/<[0xc9][k[0xe5] 5a[0xc0]35FB[0x16][0xef]d[0x16]v[0x10][0x9b][0x9]!eM[0xe1][0xa4]a[0xac]([0x86][0x81]5nY[0x1b][0xaa][0xad][\n]"
+2023-04-12 12:34:17,803 DEBUG [main] wire:87 -  << "[0x16][0xf5]Zc[0xf8]gKl[0xf2]N[0xde][0xef][0xfa][0xb4][0xce]a[[0xb5]'[0xc3][0xc6];[0x19][0x96]l[0xa2][0xaf][0x7]8[0xee][0xf7])l[0xe8][0x1a][0x9f][0x97][0xcb][0xbc][0xc6][0xa9]E[0xf1][0x8d][0xc6]F6[0x83][g[0xf5][0x1d][0x90][0xb7]F?1V2[0xbf]0[0xb0][0x16][0xf5][0xc4]'k[0xa5][0xb5]qE[0x98][0x1b][0xcc][0xdf][0x4][0x9d][0xe1][0x1a][0xf3][0x18][0xef]Xn\[0xfd]7[0x1f]*$R[0xc5]T[0xef];-[0xcd][0xcf][0xff][0xaf][0xd4][0xc3]k[0x19][0x11]w[0x16][0xd3][0xd9][0x10][0x94][0xa8][0xf4][0xfd]{[0xe5]u[0x97]ny[0xda][0xac]![0xb3][0x8a]([0x11][0xbb]{[0xb3]7[0xac][0x9d][0xcd][0x14][0xe9]^[0xc1][0xdd][0xf4]~ [0x7]p^[0x9f][0xbd][0xdd][0xcb][0x88]BJ:{R[0xe5][0xde][0x1d][0x1][0x9b][0xfe][0x13][0xf1]8[0x85][0xf9]ipdB[0xff][0xca]{[0xb8]P[0xae][0x83]K[0xbc]i[0x91][0x98]&[0xaa]M[0x84][0xcb]h0"x[0xc3][0x95]Mg[0x1]e[0x9e][0xd3][0xfd] [0x6][0x0][0x0]"
+2023-04-12 12:34:17,803 DEBUG [main] RestAssuredHttpBuilder:556 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-04-12 12:34:17,812 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@704641e3
+2023-04-12 12:34:17,812 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2023-04-12 12:34:17,833 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {s}->https://dummy.restapiexample.com:443
+2023-04-12 12:34:17,834 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to dummy.restapiexample.com:443
+2023-04-12 12:34:19,207 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2023-04-12 12:34:19,208 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2023-04-12 12:34:19,208 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2023-04-12 12:34:19,209 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2023-04-12 12:34:19,209 DEBUG [main] DefaultHttpClient:677 - Attempt 1 to execute request
+2023-04-12 12:34:19,210 DEBUG [main] DefaultClientConnection:274 - Sending request: DELETE /public/api/v1/delete/2 HTTP/1.1
+2023-04-12 12:34:19,210 DEBUG [main] wire:73 -  >> "DELETE /public/api/v1/delete/2 HTTP/1.1[\r][\n]"
+2023-04-12 12:34:19,210 DEBUG [main] wire:73 -  >> "Content-Type: application/json[\r][\n]"
+2023-04-12 12:34:19,211 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2023-04-12 12:34:19,211 DEBUG [main] wire:73 -  >> "Host: dummy.restapiexample.com[\r][\n]"
+2023-04-12 12:34:19,211 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2023-04-12 12:34:19,212 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/9.0.4)[\r][\n]"
+2023-04-12 12:34:19,212 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-04-12 12:34:19,212 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2023-04-12 12:34:19,213 DEBUG [main] headers:278 - >> DELETE /public/api/v1/delete/2 HTTP/1.1
+2023-04-12 12:34:19,213 DEBUG [main] headers:281 - >> Content-Type: application/json
+2023-04-12 12:34:19,213 DEBUG [main] headers:281 - >> Accept: */*
+2023-04-12 12:34:19,213 DEBUG [main] headers:281 - >> Host: dummy.restapiexample.com
+2023-04-12 12:34:19,214 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2023-04-12 12:34:19,214 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/9.0.4)
+2023-04-12 12:34:19,214 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2023-04-12 12:34:19,625 DEBUG [main] wire:73 -  << "HTTP/1.1 429 Too Many Requests[\r][\n]"
+2023-04-12 12:34:19,626 DEBUG [main] wire:73 -  << "Date: Wed, 12 Apr 2023 07:04:19 GMT[\r][\n]"
+2023-04-12 12:34:19,629 DEBUG [main] wire:73 -  << "Server: Apache[\r][\n]"
+2023-04-12 12:34:19,629 DEBUG [main] wire:73 -  << "X-RateLimit-Limit: 60[\r][\n]"
+2023-04-12 12:34:19,630 DEBUG [main] wire:73 -  << "X-RateLimit-Remaining: 56[\r][\n]"
+2023-04-12 12:34:19,630 DEBUG [main] wire:73 -  << "retry-after: 56[\r][\n]"
+2023-04-12 12:34:19,630 DEBUG [main] wire:73 -  << "x-ratelimit-reset: 1681283115[\r][\n]"
+2023-04-12 12:34:19,630 DEBUG [main] wire:73 -  << "Cache-Control: no-cache, private[\r][\n]"
+2023-04-12 12:34:19,630 DEBUG [main] wire:73 -  << "Upgrade: h2,h2c[\r][\n]"
+2023-04-12 12:34:19,631 DEBUG [main] wire:73 -  << "Connection: Upgrade[\r][\n]"
+2023-04-12 12:34:19,631 DEBUG [main] wire:73 -  << "Vary: Accept-Encoding[\r][\n]"
+2023-04-12 12:34:19,631 DEBUG [main] wire:73 -  << "Content-Encoding: gzip[\r][\n]"
+2023-04-12 12:34:19,631 DEBUG [main] wire:73 -  << "host-header: c2hhcmVkLmJsdWVob3N0LmNvbQ==[\r][\n]"
+2023-04-12 12:34:19,631 DEBUG [main] wire:73 -  << "X-Endurance-Cache-Level: 2[\r][\n]"
+2023-04-12 12:34:19,632 DEBUG [main] wire:73 -  << "X-nginx-cache: WordPress[\r][\n]"
+2023-04-12 12:34:19,632 DEBUG [main] wire:73 -  << "Content-Length: 595[\r][\n]"
+2023-04-12 12:34:19,632 DEBUG [main] wire:73 -  << "Content-Type: text/html; charset=UTF-8[\r][\n]"
+2023-04-12 12:34:19,633 DEBUG [main] wire:73 -  << "[\r][\n]"
+2023-04-12 12:34:19,633 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 429 Too Many Requests
+2023-04-12 12:34:19,634 DEBUG [main] headers:262 - << HTTP/1.1 429 Too Many Requests
+2023-04-12 12:34:19,634 DEBUG [main] headers:265 - << Date: Wed, 12 Apr 2023 07:04:19 GMT
+2023-04-12 12:34:19,635 DEBUG [main] headers:265 - << Server: Apache
+2023-04-12 12:34:19,635 DEBUG [main] headers:265 - << X-RateLimit-Limit: 60
+2023-04-12 12:34:19,635 DEBUG [main] headers:265 - << X-RateLimit-Remaining: 56
+2023-04-12 12:34:19,635 DEBUG [main] headers:265 - << retry-after: 56
+2023-04-12 12:34:19,635 DEBUG [main] headers:265 - << x-ratelimit-reset: 1681283115
+2023-04-12 12:34:19,635 DEBUG [main] headers:265 - << Cache-Control: no-cache, private
+2023-04-12 12:34:19,635 DEBUG [main] headers:265 - << Upgrade: h2,h2c
+2023-04-12 12:34:19,636 DEBUG [main] headers:265 - << Connection: Upgrade
+2023-04-12 12:34:19,636 DEBUG [main] headers:265 - << Vary: Accept-Encoding
+2023-04-12 12:34:19,636 DEBUG [main] headers:265 - << Content-Encoding: gzip
+2023-04-12 12:34:19,636 DEBUG [main] headers:265 - << host-header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+2023-04-12 12:34:19,637 DEBUG [main] headers:265 - << X-Endurance-Cache-Level: 2
+2023-04-12 12:34:19,637 DEBUG [main] headers:265 - << X-nginx-cache: WordPress
+2023-04-12 12:34:19,637 DEBUG [main] headers:265 - << Content-Length: 595
+2023-04-12 12:34:19,637 DEBUG [main] headers:265 - << Content-Type: text/html; charset=UTF-8
+2023-04-12 12:34:19,638 DEBUG [main] DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2023-04-12 12:34:19,639 DEBUG [main] RestAssuredHttpBuilder:553 - Parsing response as: text/html; charset=UTF-8
+2023-04-12 12:34:19,639 DEBUG [main] wire:73 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x9d]RMs[0xd4]0[0xc][0xbd][0xef][0xaf][0x10][0xe6][0xd0]K[0xdd]t[0xb][0xec][0x94][0xb0][0x9][0x7]>n[0x5][0xa6][0xf4][0xc2][0xd1][0x1b]+[0x89][0xa9]c[0xa7][0x91][0xb2]m`[0xf8][0xef]8[0x9b][0xb6][0xfb][0x91][0xb4][0xc3][0xe0][0x8b][0xad]yOO[0xf2][0x93][0x96]/>~[0xfd]p[0xf5][0xe3][0xdb]'([0xb9][0xb2][0xe9]l[0xd9]_`[0x95]+[0x12][0x81]N[0xa4]3[0x8]gY[0xa2][0xd2][0xc3]s[0x13]V[0xc8][\n]"
+2023-04-12 12:34:19,640 DEBUG [main] wire:73 -  << "[0xb2]R5[0x84][0x9c][0x88][0x96]sy.[0xe]a[0xa7]*L[0xc4][0xda][0xe0]m[0xed][0x1b][0x16][0x90]y[0xc7][0xe8][0x2][0xfd][0xd6]h.[0x13][0x8d]k[0x93][0xa1][0xdc][0x4][0xc7]`[0x9c]a[0xa3][0xac][0xa4]LYL[0xe6]Al[0xab][0xc6][0x86]-[0xa6]W[0xde][0xc3][0x85]r[0x1d]\[0xe2]M[0x8b][0xc4][0xb4][0x8c][0x6]`[0x87][0xf9]BJ[0xf8][0x1c][0xca][0x10]H[0xb9][0xd3][0x8e]5[0xee][0x1a][0x1a][0xb4][0x89][0xd0][0x8e]d[0xdd]`[0x8e][0x9c][0x95][0x2][0xca][0xf0]JD[0x14][0xe5]}[0xca]IA[0xac][0xd8]d'[0x99][0xaf][0xc4]a[0xf2][0xc0],[0x99]k[0x8a][0x1f][0xf9][0xde][0x17][0x16]Um[0xa8]O[0x89]2[0xa2][0xf7][0xb9][0xaa][0x8c][0xed][0x92]/m[0xf8][0x8d][0x17]CI[0xe2][0xce]"[0x95][0x88],[0xe][[0xfd][0xbe][0x81][0xf6]{[0xdd][0xd0][0xb7]q[0xfa][0x81][0x1c][0xc3][0xca][0xeb][0xe]~[0xef][0x1][0xfd]Y[0xa9][0xec][0xba]h|[0xeb][0xb4][0xcc][0xbc][0xf5]M[0xc]/[0xf3]<7[0xe2]=[0x80][0x8b]W[0x8b][0xd5]b[0x2][0xef][0xff]$[0x87][0xfe]c8[0x1a]~pt[0xc][0xa4][0x82]c[0x84][0x8d]y*[0xe5][0x16]MQr[0xc][0xf3][0xd3][0xd3]1[0xa3][0xdc][0x82][0xeb]r[0xc]W[0xaa])[0x8c][0x8b][0xe1] [0xf3][0xcf]l/<[0xc9][k[0xe5] 5a[0xc0]35FB[0x16][0xef]d[0x16]v[0x10][0x9b][0x9]!eM[0xe1][0xa4]a[0xac]([0x86][0x81]5nY[0x1b][0xaa][0xad][\n]"
+2023-04-12 12:34:19,640 DEBUG [main] wire:87 -  << "[0x16][0xf5]Zc[0xf8]gKl[0xf2]N[0xde][0xef][0xfa][0xb4][0xce]a[[0xb5]'[0xc3][0xc6];[0x19][0x96]l[0xa2][0xaf][0x7]8[0xee][0xf7])l[0xe8][0x1a][0x9f][0x97][0xcb][0xbc][0xc6][0xa9]E[0xf1][0x8d][0xc6]F6[0x83][g[0xf5][0x1d][0x90][0xb7]F?1V2[0xbf]0[0xb0][0x16][0xf5][0xc4]'k[0xa5][0xb5]qE[0x98][0x1b][0xcc][0xdf][0x4][0x9d][0xe1][0x1a][0xf3][0x18][0xef]Xn\[0xfd]7[0x1f]*$R[0xc5]T[0xef];-[0xcd][0xcf][0xff][0xaf][0xd4][0xc3]k[0x19][0x11]w[0x16][0xd3][0xd9][0x10][0x94][0xa8][0xf4][0xfd]{[0xe5]u[0x97]ny[0xda][0xac]![0xb3][0x8a]([0x11][0xbb]{[0xb3]7[0xac][0x9d][0xcd][0x14][0xe9]^[0xc1][0xdd][0xf4]~ [0x7]p^[0x9f][0xbd][0xdd][0xcb][0x88]BJ:{R[0xe5][0xde][0x1d][0x1][0x9b][0xfe][0x13][0xf1]8[0x85][0xf9]ipdB[0xff][0xca]{[0xb8]P[0xae][0x83]K[0xbc]i[0x91][0x98]&[0xaa]M[0x84][0xcb]h0"x[0xc3][0x95]Mg[0x1]e[0x9e][0xd3][0xfd] [0x6][0x0][0x0]"
+2023-04-12 12:34:19,640 DEBUG [main] RestAssuredHttpBuilder:556 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-04-12 12:34:19,641 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@53ec2968
+2023-04-12 12:34:19,641 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely

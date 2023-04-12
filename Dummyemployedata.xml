@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name ="Dummy Employe Data ">
+    <test verbose="2" preserve-order="true" name="C:\Users\kaveri.appana\IdeaProjects\RestAssuredProject\pom.xml">
+        <classes>
+
+<!--            <class name ="EmployeeDummyData.CreateEmploye"></class>-->
+<!--            <class name ="EmployeeDummyData.GetAllEmployes"></class>-->
+<!--            <class name ="EmployeeDummyData.PutUpdateRecord"></class>-->
+<!--            <class name ="EmployeeDummyData.DeleteEmployee"></class>-->
+<!--            <class name ="Pet.UpdateAnExixtingPet">-->
+<!--                <methods>-->
+<!--                    <include name = "updatepet"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+            <class name ="EmployeeDummyData.GetSingleRecord">
+                <methods>
+<!--                    <include name ="getrecord"/>-->
+                    <include name ="createemployee"/>
+                    <include name="Updateuser"/>
+                    <include name="deleteemployee"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+
+</suite>
