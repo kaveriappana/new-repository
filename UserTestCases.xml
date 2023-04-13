@@ -8,7 +8,8 @@
             <!--                </methods>-->
             <!--            </class>-->
 
-            <class name ="UserTestCases.CreateMultipleUsersWithArray"></class>
+            <class name="UserTestCases.LoginUser"></class>
+<!--            <class name ="UserTestCases.CreateMultipleUsersWithArray"></class>-->
 <!--            <class name ="UserTestCases.CreateUser"></class>-->
 <!--            <class name ="UserTestCases.GetUserLogin"></class>-->
 <!--            <class name ="UserTestCases.GetUserByName"></class>-->

@@ -16,8 +16,8 @@
                 <methods>
 <!--                    <include name ="getrecord"/>-->
                     <include name ="createemployee"/>
-                    <include name="Updateuser"/>
-                    <include name="deleteemployee"/>
+<!--                    <include name="Updateuser"/>-->
+<!--                    <include name="deleteemployee"/>-->
                 </methods>
             </class>
 
