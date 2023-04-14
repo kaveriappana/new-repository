@@ -59,6 +59,11 @@ public class CreateUser {
         System.out.println((String) jsonpath.get("message"));
 
         logger.info("user created successfully");
+        JsonPath jsonpath1 = new JsonPath(responsebody);
+//        Assert.assertEquals(jsonpath1.getString("code"),200);
+        Assert.assertTrue(jsonpath1.getString("type").equals("unknown"));
+
+
 
         Reporter.log("Response body is ");
         Reporter.log(responsebody.toString());

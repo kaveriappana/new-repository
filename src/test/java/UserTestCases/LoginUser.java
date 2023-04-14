@@ -53,10 +53,10 @@ public class LoginUser {
         Reporter.log("This request is Get request");
         Reporter.log("End point is : /v2/user/login");
         RequestSpecification httprequest = RestAssured.given();
-        Response response = httprequest.when().
+        Response response = httprequest.
                 header("accept","application/json").
                 queryParams("username","phani").
-                queryParams("password ","kaveri").get(baseURI +"/v2/user/login");
+                queryParams("password ","kaveri").when().get(baseURI +"/v2/user/login");
 
         String responsebody = response.getBody().asString();
         System.out.println("response body is : "+responsebody);
@@ -75,8 +75,8 @@ public class LoginUser {
         Reporter.log("This is delete request");
         Reporter.log("End point is : /v2/user/phani");
         RequestSpecification httprequest = RestAssured.given();
-        Response response = httprequest.when().
-                header("accept","application/json").
+        Response response = httprequest.
+                header("accept","application/json").when().
                 delete(baseURI+"/v2/user/phani");
         String responsebody = response.getBody().asString();
         System.out.println("Response body is : "+responsebody);
@@ -92,8 +92,8 @@ public class LoginUser {
         Reporter.log("This is get request");
         Reporter.log("End point is : /v2/user/phani");
         RequestSpecification httprequest =RestAssured.given();
-        Response response =httprequest.when().
-                header("accept","application/json").
+        Response response =httprequest.
+                header("accept","application/json").when().log().all().
                 get(baseURI+"/v2/user/phani");
         String responsebody = response.getBody().asString();
         System.out.println("Response body is :"+responsebody);
@@ -108,7 +108,7 @@ public class LoginUser {
         Reporter.log("This Request is Update request");
         Reporter.log("End point is : /v2/user/phani");
         RequestSpecification httprequest =RestAssured.given();
-        Response response =httprequest.when().
+        Response response =httprequest.
                 header("accept","application/json").
                 header("Content-Type","application/json").
                 body("{\n" +
@@ -121,7 +121,7 @@ public class LoginUser {
                         "  \"phone\": \"9959021532\",\n" +
                         "  \"userStatus\": 0\n" +
                         "}").
-                put(baseURI+"/v2/user/phani");
+                when().put(baseURI+"/v2/user/phani");
         String responsebody = response.getBody().asString();
         System.out.println("Response body is :"+responsebody);
         Reporter.log("Response body is : "+responsebody);
