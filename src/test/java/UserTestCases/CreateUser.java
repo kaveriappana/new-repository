@@ -63,7 +63,8 @@ public class CreateUser {
 //        Assert.assertEquals(jsonpath1.getString("code"),200);
         Assert.assertTrue(jsonpath1.getString("type").equals("unknown"));
 
-
+          String id =jsonpath1.get("id");
+          System.out.println("id value is :"+id);
 
         Reporter.log("Response body is ");
         Reporter.log(responsebody.toString());

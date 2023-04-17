@@ -5,6 +5,7 @@ import io.restassured.http.Method;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.json.simple.JSONObject;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class PlaceOrderForPet {
@@ -59,6 +60,8 @@ public class PlaceOrderForPet {
         System.out.println("Response body is " +responseBody);
 
         System.out.println(response.getTime());
-        response.getStatusCode();
+        System.out.println(response.getStatusCode());
+        Assert.assertTrue(responseBody.contains("\"quantity\":5"));
+        Assert.assertTrue(responseBody.contains("\"petId\":0"));
     }
 }

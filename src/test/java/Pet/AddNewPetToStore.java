@@ -1,6 +1,7 @@
 package Pet;
 
 import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.apache.log4j.PropertyConfigurator;
@@ -50,12 +51,14 @@ public class AddNewPetToStore {
         String responsebody= response.getBody().asString();
         System.out.println("request body is "+responsebody);
         Reporter.log("Response body is "+responsebody);
-
-
         Assert.assertEquals(response.getStatusCode(),200);
         System.out.println(response.getStatusCode());
         Reporter.log("Status code is 200");
 
+        JsonPath js = new JsonPath("responsebody");
+        String name  = js.get("name");
+        System.out.println("Count is :"+name);
+        //Assert.assertEquals(name,"dog");
         logger.info("A new pet is created ");
         Reporter.log("A new pet is created");
 
