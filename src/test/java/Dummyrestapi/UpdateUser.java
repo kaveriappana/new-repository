@@ -4,6 +4,8 @@ import io.restassured.RestAssured;
 import io.restassured.http.Method;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.Logger;
 import org.json.simple.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -11,6 +13,8 @@ import org.testng.annotations.Test;
 public class UpdateUser {
     @Test
     public void updateuser(){
+       Logger logger = Logger.getLogger(UpdateUser.class);
+        BasicConfigurator.configure();
         RestAssured.baseURI="https://reqres.in";
         RequestSpecification httprequest = RestAssured.given();
         JSONObject json = new JSONObject();

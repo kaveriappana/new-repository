@@ -13,21 +13,21 @@ import java.io.IOException;
 
 public class CreateMultipleUsers {
     @Test(dataProvider = "empdataprovider")
-    public void createusers(String username,String firstname,String lastname,String email,String pass,String phone)
+    public void createusers(String id, String username,String firstname,String lastname,String email,String pass,String phone,String userStatus)
     {
 
         RestAssured.baseURI ="https://petstore.swagger.io";
         RequestSpecification request = RestAssured.given();
 
         JSONObject json= new JSONObject();
-        json.put("id","0");
+        json.put("id",id);
         json.put("username",username);
         json.put("firstName",firstname);
         json.put("lastName",lastname);
         json.put("email",email);
         json.put("password",pass);
         json.put("phone",phone);
-        json.put("userStatus","0");
+        json.put("userStatus",userStatus);
 
 
         request.header("Content-Type","application/json");
@@ -48,7 +48,7 @@ public class CreateMultipleUsers {
     @Test(retryAnalyzer = RetryAnalizer.class)
     String[][] getEmpData() throws IOException
     {
-        String path = "C:\\Users\\kaveri.appana\\IdeaProjects\\RestAssuredTestingProject\\src\\main\\resources\\UsersTestData.xlsx";
+        String path = "C:\\Users\\kaveri.appana\\IdeaProjects\\RestAssuredTestingProject\\src\\test\\java\\DataDrivenTesting\\Createmultipleusers.xlsx";
         int rownum = XLUtils.getRowCount(path,"UsersTestData");
         int colcount = XLUtils.getCellCount(path, "UsersTestData",1);
         String empdata[][] = new String[rownum][colcount];

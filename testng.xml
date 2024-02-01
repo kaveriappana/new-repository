@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="API Automation">
+    <test verbose="2" preserve-order="true" name="C:/Users/kaveri.appana/IdeaProjects/RestAssuredTestingProject">
+        <classes>
+            <class name="DataDrivenTesting.AddNewPet_DataDriven">
+                <methods>
+                    <include name="addpet"/>
+                    <include name="getEmpData"/>
+                </methods>
+            </class>
+            <class name="DataDrivenTesting.CreateMultipleUsers">
+                <methods>
+                    <include name="createusers"/>
+                    <include name="getEmpData"/>
+                </methods>
+            </class>
+            <class name="DataDrivenTesting.CreateUserDummyrestapi_DataDriven">
+                <methods>
+                    <include name="postemlopyees"/>
+                    <include name="getEmpData"/>
+                </methods>
+            </class>
+            <class name="DataDrivenTesting.FindPurchaseOrder_DataDriven">
+                <methods>
+                    <include name="getpet"/>
+                    <include name="getEmpData"/>
+                </methods>
+            </class>
+            <class name="DataDrivenTesting.GetUserLogin_DataDriven">
+                <methods>
+                    <include name="getlogin"/>
+                    <include name="getEmpData"/>
+                </methods>
+            </class>
+            <class name="DataDrivenTesting.SingleUserNotFound">
+                <methods>
+                    <include name="singleusernotfound"/>
+                </methods>
+            </class>
+            <class name="DataDrivenTesting.UpdateUser_DataDriven">
+                <methods>
+                    <include name="updateuser"/>
+                    <include name="getEmpData"/>
+                </methods>
+            </class>
+            <class name="Dummyrestapi.CreateDummyuser">
+                <methods>
+                    <include name="createemployee"/>
+                </methods>
+            </class>
+            <class name="Dummyrestapi.CreateUser">
+                <methods>
+                    <include name="createuser"/>
+                </methods>
+            </class>
+            <class name="Dummyrestapi.DeleteUser">
+                <methods>
+                    <include name="deleteuser"/>
+                </methods>
+            </class>
+            <class name="Dummyrestapi.GetListOfResource">
+                <methods>
+                    <include name="listofresouce"/>
+                </methods>
+            </class>
+            <class name="Dummyrestapi.GetListOfUsers">
+                <methods>
+                    <include name="getusers"/>
+                </methods>
+            </class>
+            <class name="Dummyrestapi.GetSingleResouce">
+                <methods>
+                    <include name="getsingleuser"/>
+                </methods>
+            </class>
+            <class name="Dummyrestapi.GetSingleUser">
+                <methods>
+                    <include name="getsingleuser"/>
+                    <include name="getsingleusernotfound"/>
+                </methods>
+            </class>
+            <class name="Dummyrestapi.LoginUser">
+                <methods>
+                    <include name="loginuser"/>
+                </methods>
+            </class>
+            <class name="Dummyrestapi.PostRegisterUser">
+                <methods>
+                    <include name="registerlogin"/>
+                </methods>
+            </class>
+            <class name="Dummyrestapi.UpdateUser">
+                <methods>
+                    <include name="updateuser"/>
+                </methods>
+            </class>
+            <class name="PetStore.DeletePurchaseOrderById">
+                <methods>
+                    <include name="deletepurchasebyid"/>
+                    <include name="deletealreadydeletedpurchase"/>
+                </methods>
+            </class>
+            <class name="PetStore.FindPurchaseByOrderId">
+                <methods>
+                    <include name="getpet"/>
+                    <include name="getpetbyinalidid"/>
+                </methods>
+            </class>
+            <class name="PetStore.GetInventoryStatus">
+                <methods>
+                    <include name="inventory"/>
+                </methods>
+            </class>
+            <class name="PetStore.PlaceOrderForPet">
+                <methods>
+                    <include name="petorder"/>
+                    <include name="placleorderbychangingfields"/>
+                </methods>
+            </class>
+            <class name="Pet.AddNewPetToStore">
+                <methods>
+                    <include name="addpet"/>
+                </methods>
+            </class>
+            <class name="Pet.DeletePet">
+                <methods>
+                    <include name="deletepet"/>
+                </methods>
+            </class>
+            <class name="Pet.GetPetById">
+                <methods>
+                    <include name="findpetbyid"/>
+                </methods>
+            </class>
+            <class name="Pet.GetPetByStatus">
+                <methods>
+                    <include name="getpetbystatus"/>
+                </methods>
+            </class>
+            <class name="Pet.UpdateAnExixtingPet">
+                <methods>
+                    <include name="updatepet"/>
+                    <include name="updatethepetinformationbyid"/>
+                </methods>
+            </class>
+            <class name="Pet.UploadImage">
+                <methods>
+                    <include name="uploadimage"/>
+                </methods>
+            </class>
+            <class name="UserTestCases.CreateMultipleUsersWithArray">
+                <methods>
+                    <include name="createusers"/>
+                </methods>
+            </class>
+            <class name="UserTestCases.CreateUser">
+                <methods>
+                    <include name="createuser"/>
+                </methods>
+            </class>
+            <class name="UserTestCases.DeleteUser">
+                <methods>
+                    <include name="deleteuser"/>
+                    <include name="deletedeleteduser"/>
+                </methods>
+            </class>
+            <class name="UserTestCases.GetLogoutUser">
+                <methods>
+                    <include name="logout"/>
+                </methods>
+            </class>
+            <class name="UserTestCases.GetUserByName">
+                <methods>
+                    <include name="getuser"/>
+                    <include name="invaliduser"/>
+                    <include name="getdeleteduser"/>
+                </methods>
+            </class>
+            <class name="UserTestCases.GetUserLogin">
+                <methods>
+                    <include name="loginuser"/>
+                </methods>
+            </class>
+            <class name="UserTestCases.PostUser_PassingParametersFromTestng">
+                <methods>
+                    <include name="createuser"/>
+                </methods>
+            </class>
+            <class name="UserTestCases.UpdateUser">
+                <methods>
+                    <include name="updateuser"/>
+                    <include name="updatename"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
